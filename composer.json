@@ -1,0 +1,11 @@
+{
+   "name": "aesop/lasso-yoast",
+   "type": "wordpress-plugin",
+   "description": "Yoast add-on for Lasso",
+   "homepage": "http://lasso.is",
+   "license": "GPL-2.0+",
+   "keywords": ["plugin","wordpress","seo"],
+   "require": {
+     "composer/installers": "~1.0.6"
+   }
+}
