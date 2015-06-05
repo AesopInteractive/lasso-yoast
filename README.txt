@@ -1,16 +1,16 @@
-=== Lasso Yoast ===
-Contributors: shelob9
+=== Lasso SEO ===
+Contributors: shelob9, michaelbeil
 Author URI:  http://joshpress.net
 Plugin URI: https://lasso.is
 Requires at least: 3.5
 Tested up to: 4.2.2
 Stable tag: 0.1
 
-Yoast add-on for Lasso.
+SEO add-on for Lasso.
 
 == Description ==
 
-Yoast add-on for Lasso.
+SEO add-on for Lasso.
 
 == Installation ==
 

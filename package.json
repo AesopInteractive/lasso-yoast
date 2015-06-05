@@ -1,5 +1,5 @@
 {
-  "name": "lasso-yoast",
+  "name": "lasso-seo",
   "version": "0.1",
   "dependencies": {
     "load-grunt-tasks": "~0.2.1"
