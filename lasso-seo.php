@@ -22,22 +22,18 @@ class Lasso_SEO {
 	 *
 	 * @since 0.0.1
 	 *
-	 * @todo set dynamically based on current SEO plugin.
-	 *
 	 * @var string
 	 */
-	public $title_field = '_yoast_wpseo_title';
+	public $title_field;
 
 	/**
 	 * Name of meta field for SEO description
 	 *
 	 * @since 0.0.1
 	 *
-	 * @todo set dynamically based on current SEO plugin.
-	 *
 	 * @var string
 	 */
-	public $desc_field = '_yoast_wpseo_metadesc';
+	public $desc_field;
 
 	/**
 	 * Consturctor for class
@@ -47,6 +43,45 @@ class Lasso_SEO {
 	public function __construct() {
 		add_filter( 'lasso_modal_tabs', array( $this, 'the_tabs' ) );
 		add_action( 'init', array( $this, 'register_fields' ) );
+		$this->set_fields();
+	}
+
+	/**
+	 * Set SEO title/description meta keys.
+	 *
+	 * @since 0.0.2
+	 */
+	public function set_fields() {
+
+		if ( defined( 'WPSEO_FILE' ) ) {
+			$this->title_field = '_yoast_wpseo_title';
+			$this->desc_field = '_yoast_wpseo_metadesc';
+		}elseif( function_exists( 'genesis' ) ) {
+			$this->title_field = 'genesis_seo[_genesis_title]';
+			$this->desc_field = 'genesis_seo[_genesis_description]';
+		}elseif( defined( 'AIOSEOP_VERSION' ) ) {
+			$this->title_field = '_aioseop_title';
+			$this->desc_field = '_aioseop_desc';
+		}
+
+		/**
+		 * Filter the name of the meta key to be used for SEO title.
+		 *
+		 * @since 0.0.2
+		 *
+		 * @param string $title_field The meta key.
+		 */
+		$this->title_field = apply_filters( 'lasso_seo_title_field', $this->title_field );
+
+		/**
+		 * Filter the name of the meta key to be used for SEO description.
+		 *
+		 * @since 0.0.2
+		 *
+		 * @param string $title_field The meta key.
+		 */
+		$this->desc_field = apply_filters( 'lasso_seo_desc_field', $this->desc_field );
+
 	}
 
 	/**
