@@ -2,4 +2,4 @@
 
 # SEO add-on for Lasso
 
-This add-on will create a tab within Lasso's setting modal where SEO can be easily adjusted.
+This add-on will create a tab within Lasso's setting modal where SEO metadata can be easily added.
