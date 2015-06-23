@@ -41,9 +41,9 @@ class Lasso_SEO {
 	 * @since 0.0.1
 	 */
 	public function __construct() {
+		$this->set_fields();
 		add_filter( 'lasso_modal_tabs', array( $this, 'the_tabs' ) );
 		add_action( 'init', array( $this, 'register_fields' ) );
-		$this->set_fields();
 	}
 
 	/**
