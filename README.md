@@ -12,7 +12,7 @@ This plugin is for editting and saving SEO title and descriptions for posts. It 
 * All in One SEO
 * Genesis SEO
 
-If none of these systems are in place, you must use the provided filters to specificy which meta fields to save in. These filters are:
+If none of these systems are in place, you must use the provided filters to specifiy which meta fields to save in. These filters are:
 * `lasso_seo_title_field`
 * `lasso_seo_desc_field`
 
