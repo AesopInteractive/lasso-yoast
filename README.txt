@@ -1,5 +1,5 @@
 === Lasso SEO ===
-Contributors: shelob9, michaelbeil
+Contributors: Shelob9, michaelbeil
 Author URI:  http://joshpress.net
 Plugin URI: https://lasso.is
 Requires at least: 3.5
