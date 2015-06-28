@@ -12,7 +12,7 @@ Edit SEO fields for popular SEO plugins from the front-end when using Lasso.
 
 This add-on will create a tab within Lasso's setting modal where SEO metadata can be easily added.
 
-This plugin is for editting and saving SEO title and descriptions for posts. It intergrates with existing SEO plugins for the output of that data. It works automatically with the following plugins:
+This plugin is for editing and saving SEO title and descriptions for posts. It intergrates with existing SEO plugins for the output of that data. It works automatically with the following plugins:
 * WordPress SEO by Yoast
 * All in One SEO
 * Genesis SEO
